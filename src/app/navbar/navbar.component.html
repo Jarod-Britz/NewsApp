@@ -1,0 +1,35 @@
+<!-- <mat-toolbar>
+    <mat-icon>menu_book</mat-icon><span routerLink="">Top Headlines</span>
+    <mat-icon>phonelink</mat-icon><span routerLink="toptech">Top Technology</span>
+    <mat-icon>sports_soccer</mat-icon><span routerLink="sport">Sports</span>
+
+</mat-toolbar> -->
+
+
+
+<nav class="navbar sticky-top navbar-expand-lg">
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" active>
+              <a class="nav-link" [routerLink]="['/']"><mat-icon>menu_book</mat-icon>Top Headlines<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['toptech']"><mat-icon>phonelink</mat-icon>Top Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['sport']"><mat-icon>sports_soccer</mat-icon>Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['entertainment']"><mat-icon>camera_roll</mat-icon>Entertainment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['health']"><mat-icon>camera_roll</mat-icon>Health</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      

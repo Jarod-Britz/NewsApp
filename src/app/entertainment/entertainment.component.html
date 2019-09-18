@@ -1,0 +1,17 @@
+
+<h1>ENTERTAINMENT</h1>
+<mat-card *ngFor="let article of articles">
+  <a href="{{article.url}}">
+  <div class="container">
+    <div>
+      <img src="{{article.urlToImage}}" alt="">
+    </div>
+
+    <div class="content">
+      <strong><h3>{{article.title}}</h3></strong>
+      <h5>{{article.description}}</h5>
+      <p>{{article.publishedAt}}</p>
+    </div>
+  </div>
+</a>
+</mat-card>
