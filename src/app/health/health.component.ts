@@ -15,7 +15,6 @@ export class HealthComponent implements OnInit {
     this.articlesService.getHealth()
     .subscribe(data => {
       this.articles = data['articles'];
-      console.log(this.articles);
       
     })
   }
